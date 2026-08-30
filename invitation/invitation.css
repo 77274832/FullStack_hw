@@ -1,0 +1,454 @@
+```css
+/* =================================
+       GENERAL PAGE STYLING
+================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fff5fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+/* =================================
+             HEADER
+================================= */
+
+header {
+    text-align: center;
+    padding: 45px 20px;
+    background: linear-gradient(135deg, #ff69b4, #9b59b6);
+    color: white;
+}
+
+header h1 {
+    font-size: 42px;
+    margin: 10px 0;
+}
+
+header p {
+    font-size: 18px;
+}
+
+header hr {
+    width: 60%;
+    border: none;
+    border-top: 2px solid white;
+}
+
+
+/* =================================
+           NAVIGATION
+================================= */
+
+nav {
+    background: #ffffff;
+    padding: 12px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #9b59b6;
+    font-weight: bold;
+    padding: 10px 15px;
+    display: block;
+    border-radius: 20px;
+}
+
+nav a:hover {
+    background: #ff69b4;
+    color: white;
+}
+
+
+/* =================================
+              MAIN
+================================= */
+
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+section {
+    padding: 45px 20px;
+    margin: 25px 0;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+section h2 {
+    text-align: center;
+    color: #9b59b6;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+section h3 {
+    color: #ff4f9a;
+}
+
+
+/* =================================
+              HERO
+================================= */
+
+#hero {
+    text-align: center;
+}
+
+#hero figure {
+    margin: 0;
+}
+
+#hero img {
+    width: 100%;
+    max-height: 420px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+#hero figcaption {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #9b59b6;
+}
+
+#hero h2 {
+    font-size: 36px;
+}
+
+#hero p {
+    max-width: 750px;
+    margin: 10px auto;
+}
+
+
+/* =================================
+             BUTTONS
+================================= */
+
+button {
+    border: none;
+    padding: 12px 22px;
+    margin: 10px 5px;
+    border-radius: 25px;
+    background: #ff69b4;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #9b59b6;
+    transform: scale(1.05);
+}
+
+
+/* =================================
+             ABOUT
+================================= */
+
+#about article {
+    padding: 20px;
+    margin: 15px 0;
+    background: #fff0f7;
+    border-radius: 10px;
+}
+
+blockquote {
+    font-size: 20px;
+    font-style: italic;
+    text-align: center;
+    color: #9b59b6;
+}
+
+#about ul,
+#highlights ul {
+    columns: 2;
+}
+
+li {
+    margin: 10px 0;
+}
+
+
+/* =================================
+          PARTY DETAILS
+================================= */
+
+#details dl {
+    max-width: 700px;
+    margin: auto;
+}
+
+#details dt {
+    font-weight: bold;
+    color: #ff4f9a;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+#details dd {
+    margin-left: 0;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+
+/* =================================
+              TABLE
+================================= */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+
+caption {
+    font-size: 18px;
+    font-weight: bold;
+    color: #9b59b6;
+    padding: 12px;
+}
+
+th {
+    background: #9b59b6;
+    color: white;
+}
+
+th,
+td {
+    padding: 13px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+    background: #fff0f7;
+}
+
+tr:hover {
+    background: #ffe0ef;
+}
+
+
+/* =================================
+              GALLERY
+================================= */
+
+#gallery {
+    text-align: center;
+}
+
+#gallery figure {
+    display: inline-block;
+    vertical-align: top;
+    margin: 15px;
+}
+
+#gallery img {
+    width: 250px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+#gallery img:hover {
+    transform: scale(1.05);
+}
+
+#gallery figcaption {
+    margin-top: 8px;
+    font-weight: bold;
+    color: #9b59b6;
+}
+
+
+/* =================================
+              RSVP FORM
+================================= */
+
+form {
+    max-width: 700px;
+    margin: auto;
+}
+
+fieldset {
+    border: 2px solid #ff69b4;
+    border-radius: 15px;
+    padding: 25px;
+}
+
+legend {
+    padding: 5px 15px;
+    color: #9b59b6;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+label {
+    font-weight: bold;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 11px;
+    margin-top: 6px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 8px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+
+/* =================================
+                FAQ
+================================= */
+
+details {
+    background: #fff0f7;
+    margin: 12px 0;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+summary {
+    cursor: pointer;
+    font-weight: bold;
+    color: #9b59b6;
+}
+
+
+/* =================================
+              LOCATION
+================================= */
+
+iframe {
+    display: block;
+    width: 100%;
+    max-width: 700px;
+    height: 350px;
+    margin: auto;
+    border: 0;
+    border-radius: 12px;
+}
+
+
+/* =================================
+              CONTACT
+================================= */
+
+address {
+    text-align: center;
+    font-style: normal;
+    font-size: 17px;
+    line-height: 2;
+}
+
+
+/* =================================
+               FOOTER
+================================= */
+
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #9b59b6, #ff69b4);
+    color: white;
+}
+
+footer h2 {
+    margin-bottom: 10px;
+}
+
+footer p {
+    margin: 8px;
+}
+
+
+/* =================================
+          RESPONSIVE DESIGN
+================================= */
+
+@media (max-width: 700px) {
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #about ul,
+    #highlights ul {
+        columns: 1;
+    }
+
+    table {
+        font-size: 13px;
+    }
+
+    th,
+    td {
+        padding: 8px;
+    }
+
+    #gallery figure {
+        display: block;
+    }
+
+    #gallery img {
+        width: 90%;
+        height: auto;
+    }
+
+    section {
+        padding: 30px 15px;
+    }
+
+}
+```
